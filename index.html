@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Predictor</title>
+    <link rel="stylesheet" href="stocks.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">📈 Stock Predictor</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Predictions</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Signup</button>
+        </div>
+    </header>
+
+    <!-- LIVE MARKET TRENDS -->
+    <div class="market-ticker">
+        <marquee behavior="scroll" direction="left" id="liveStockTicker">
+            Loading live stock data...
+        </marquee>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>AI-Driven Stock Market Predictions at Your Fingertips!</h1>
+        <div class="search-box">
+            <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol (e.g., AAPL)">
+            <button id="searchButton">Predict Now</button>
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+        <h2>Live Market Trends</h2>
+        <div class="market-icons">
+            <span>📊 NASDAQ</span>
+            <span>📈 S&P 500</span>
+            <span>📉 Dow Jones</span>
+        </div>
+    </section>
+
+    <!-- GRAPH SECTION -->
+    <section class="graph-section">
+        <h2>Stock Prediction Graph</h2>
+        <canvas id="stockChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Predictions</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>© 2025 Stock Market Predictor. All rights reserved.</p>
+    </footer>
+
+    <script src="stocks.js"></script>
+</body>
+</html>
